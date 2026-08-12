@@ -68,7 +68,7 @@ java -javaagent:opentelemetry-javaagent.jar \
   -Dotel.service.name=otel-demo \
   -Dotel.javaagent.logging=application \
   -Dotel.traces.exporter=none -Dotel.metrics.exporter=none -Dotel.logs.exporter=none \
-  -jar app.jar
+  -jar target/otel-demo.jar
 curl http://localhost:8080/
 ```
 
